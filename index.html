@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <script src="jquery-3.3.1.min.js"></script>
+    <title>Exercice 1</title>
+  </head>
+  <body>
+    <button type="button" id="button">Cliquez moi</button>
+    <p id="clicks" > Clicks:  0</p>
+
+    <script>
+      // var clicks = 0;
+      // function onClick() {
+      //   clicks += 1;
+      //   document.getElementById("clicks").innerHTML = clicks;
+      // };
+      var clicks = 0;
+      $('#button').click(function(){
+        clicks++;
+        $('#clicks').text('Clicks ' +clicks);
+      });
+
+</script>
+
+
+  </body>
+</html>
